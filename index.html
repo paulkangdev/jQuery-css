@@ -5,35 +5,50 @@
 
 <head>
     <meta charset="utf-8">
-    <title>jQuery Bootstrap Playground - Quiz Game</title>
+    <title>jQuery-CSS Playground - Quiz Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 </head>
 <body class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class ="nav-link" href="index.html" rel="homepage">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="todo.html">To-Do List</a>
-                        <a class="dropdown-item" href="calculator.html">Calculator</a>
-                        <a class="dropdown-item" href="memory.html">Memory Game</a>
-                        <a class="dropdown-item" href="quiz.html">Quiz Game</a>
-                        <a class="dropdown-item" href="graphs.html">Movable Graphs</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#About" rel="internal">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Contact" rel="internal">Contact Us</a></li>
-            </ul>
-            </nav>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="#">jQuery Playground</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Other Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">To-Do List</a>
+          <a class="dropdown-item" href="#">Quiz Game</a>
+          <a class="dropdown-item" href="#">Calculator</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">See All Projects</a>
+        </div>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
     <section id="main">
         <section class="row display-wrapper">
-            <h1 class="col-12 text-center">Refactored jQuery/Bootstrap Quiz Game! 
+            <h1 class="col-12 text-center">Refactored jQuery/Bootstrap Quiz Game! <br>
                 Test My Knowledge!</h1>
             <div class="col empty-div"></div>
-            <div class="col-4">
+            <div class="col question-wrapper">
                 <div class="card text-center question-card">
                     <h2 class="card-title text-center question-title"></h2>
                     <div class="card-body text-center question-body"></div>
@@ -43,26 +58,30 @@
         </section>
         <section class="row statistics-wrapper">
             <div class="col-4 empty-div"></div>
-            <ol class="col-4 list-group stats-group">
+            <div class="col">
+                <ol class="list-group stats-group">
                 <li class="list-group-item list-group-item-light stats-group-item">Player Statistics:</li>
                     <li class="list-group-item list-group-item-light stats-group-item">Total Score: <span class="player-score"></span></li>
                     <li class="list-group-item list-group-item-light stats-group-item">Questions Right: <span class="questions-right"></span> out of <span class="total-questions">3</span></li>
                     <li class="list-group-item list-group-item-light stats-group-item">Wrong Answers Given: <span class="questions-wrong"></span></li>
-            </ol>
+                </ol>
+            </div>        
             <div class="col-4 empty-div"></div>
         </section>
-        <section class="col-12 answers-wrapper">
+        <section class="row answers-wrapper">
             <h2 class="col-12">Select an Answer:</h2>
-            <ol class="list-group questions-group">
-                <li class="list-group-item list-group-item-light">A. 
-                    <span class="answer-a"></span></li>
-                <li class="list-group-item list-group-item-light">B. 
-                    <span class="answer-b"></span></li>
-                <li class="list-group-item list-group-item-light">C. 
-                    <span class="answer-c"></span></li>
-                <li class="list-group-item list-group-item-light">D. 
-                    <span class="answer-d"></span></li>
-            </ol>
+            <div class="col">
+                <ol class="list-group questions-group">
+                    <li class="list-group-item list-group-item-light">A. 
+                        <span class="answer-a"></span></li>
+                    <li class="list-group-item list-group-item-light">B. 
+                        <span class="answer-b"></span></li>
+                    <li class="list-group-item list-group-item-light">C. 
+                        <span class="answer-c"></span></li>
+                    <li class="list-group-item list-group-item-light">D. 
+                        <span class="answer-d"></span></li>
+                </ol>
+            </div>
         </section>
     </section>
     
