@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/quiz.css" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Bootstrap Playground - Quiz Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class ="nav-link" href="index.html" rel="homepage">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="todo.html">To-Do List</a>
+                        <a class="dropdown-item" href="calculator.html">Calculator</a>
+                        <a class="dropdown-item" href="memory.html">Memory Game</a>
+                        <a class="dropdown-item" href="quiz.html">Quiz Game</a>
+                        <a class="dropdown-item" href="graphs.html">Movable Graphs</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#About" rel="internal">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact" rel="internal">Contact Us</a></li>
+            </ul>
+            </nav>
+    <section id="main">
+        <section class="row display-wrapper">
+            <h1 class="col-12 text-center">Refactored jQuery/Bootstrap Quiz Game! 
+                Test My Knowledge!</h1>
+            <div class="col empty-div"></div>
+            <div class="col-4">
+                <div class="card text-center question-card">
+                    <h2 class="card-title text-center question-title"></h2>
+                    <div class="card-body text-center question-body"></div>
+                </div>
+            </div>
+            <div class="col empty-div"></div>
+        </section>
+        <section class="row statistics-wrapper">
+            <div class="col-4 empty-div"></div>
+            <ol class="col-4 list-group stats-group">
+                <li class="list-group-item list-group-item-light stats-group-item">Player Statistics:</li>
+                    <li class="list-group-item list-group-item-light stats-group-item">Total Score: <span class="player-score"></span></li>
+                    <li class="list-group-item list-group-item-light stats-group-item">Questions Right: <span class="questions-right"></span> out of <span class="total-questions">3</span></li>
+                    <li class="list-group-item list-group-item-light stats-group-item">Wrong Answers Given: <span class="questions-wrong"></span></li>
+            </ol>
+            <div class="col-4 empty-div"></div>
+        </section>
+        <section class="col-12 answers-wrapper">
+            <h2 class="col-12">Select an Answer:</h2>
+            <ol class="list-group questions-group">
+                <li class="list-group-item list-group-item-light">A. 
+                    <span class="answer-a"></span></li>
+                <li class="list-group-item list-group-item-light">B. 
+                    <span class="answer-b"></span></li>
+                <li class="list-group-item list-group-item-light">C. 
+                    <span class="answer-c"></span></li>
+                <li class="list-group-item list-group-item-light">D. 
+                    <span class="answer-d"></span></li>
+            </ol>
+        </section>
+    </section>
+    
+    <footer class="row">
+        <div class="col-4 footer-column">Sweet Logo Will Go Here</div>
+        <ul class="col-4 list-group-flush footer-group">    
+            <li class="list-group-item list-group"><a href=#>Latest News</a></li> 
+            <li class="list-group-item list-group"><a href=#>Careers</a></li> 
+            <li class="list-group-item list-group"><a href=#>Other Text Link Stuff</a></li>
+            <li class="list-group-item list-group"><a href=#>Other Text Link Stuff</a></li>
+            <li class="list-group-item list-group"><a href=#>Other Text Link Stuff</a></li>
+            <li class="list-group-item list-group"><a href=#>Other Text Link Stuff</a></li>
+        </ul>
+        <div class="col-4 footer-column"> Third Column</div>    
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+    
+</html>
